@@ -10,6 +10,8 @@
         <!-- Windows-only, self-contained single file. IncludeNativeLibrariesForSelfExtract embeds
              Skia/HarfBuzz/ANGLE into the exe so the released binary is self-sufficient. -->
         <PublishSingleFile>true</PublishSingleFile>
+        <!-- Avoid FAST_FAIL_SET_CONTEXT_DENIED when opening native folder dialogs. -->
+        <CETCompat>false</CETCompat>
         <SelfContained>true</SelfContained>
         <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
         <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
